@@ -8,7 +8,7 @@ const News = () => {
   
   return (
     <div className="container-fluid">
-      <h1 className="headlines">Top Headlines</h1>
+      <h1 className="headlines">Top Latest Headlines</h1>
       <div className="row row-cols-1 row-cols-md-3 row-eq-height" >
         {articles.map((article) => {
           return (
