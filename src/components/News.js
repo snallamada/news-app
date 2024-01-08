@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 
 const News = () => {
   // Used custom hook useFetch to fetch the data
-  const {articles} = useFetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=${process.env.REACT_APP_API_KEY}`);
+  const {articles} = useFetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=1e471f8c33ec4b7f880ef97f10dd8a9d`);
   
   return (
     <div className="container-fluid">
