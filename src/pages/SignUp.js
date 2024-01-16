@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 const SignUp = () => {
   const [user, setUser] = useState([]);
   const [users, setUsers] = useState({ id: "",name:"",pnumber : "",password: ""});
-  const [errorMsg, setErrorMsg] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -24,9 +23,7 @@ const SignUp = () => {
           navigate("/login");
           //setSuccesMsg("New Bookings has been added with the book id " + response.data.id)
         })
-        .catch((error) => {
-          setErrorMsg(error);
-        })
+        
   }
 
   const handleChange = (event) => {
